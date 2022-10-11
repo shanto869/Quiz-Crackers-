@@ -1,0 +1,11 @@
+.option-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.option-container .option {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
