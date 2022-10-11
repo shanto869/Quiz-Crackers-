@@ -1,11 +1,17 @@
 .option-container {
-    margin-left: 5%;
-    margin-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .option-container .option {
+    font-size: 17px;
     text-align: left;
     border: none;
     padding: 10px 15px;
     border-radius: 7px;
+    transition: all linear .2s;
+}
+
+.option-container .option:hover {
+    background-color: burlywood;
 }

@@ -7,7 +7,7 @@ const Quiz = ({ quiz, idx }) => {
     // console.log(quiz)
     return (
         <div className='quiz px-4'>
-            <h5>Quiz {idx + 1}: {question}</h5>
+            <h5 className='heading-font'>Quiz {idx + 1}: {question}</h5>
             <div className=''>
                 {
                     options.map((option, idx) =>

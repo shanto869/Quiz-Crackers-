@@ -9,8 +9,8 @@ const Header = () => {
 
             <nav className="navbar navbar-expand-lg background text-white">
                 <div className="container ">
-                    <Link className="navbar-brand fs-2 fw-bold text-yellow font-ubuntu" href="/"><span
-                        className="logo-color ">Test </span>
+                    <img src="../Header/quiz.png" alt="" />
+                    <Link className="navbar-brand fs-2 fw-bold text-yellow font-ubuntu" to="/"><span className="logo-color "> Test </span>
                         Wafers</Link>
                     <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false"
