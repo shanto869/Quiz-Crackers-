@@ -1,0 +1,95 @@
+:root {
+    --heading-font: 'Ubuntu Condensed', sans-serif;
+    --menu-font: 'Roboto Condensed', sans-serif;
+    --news-heading: 'Roboto Slab', serif;
+}
+
+.font-ubuntu {
+    font-family: var(--heading-font);
+    font-weight: 400;
+}
+
+.menu-font {
+    font-family: var(--menu-font);
+    font-weight: 400;
+}
+
+.heading-font {
+    font-family: var(--news-heading);
+    font-weight: 500;
+}
+
+.cursor {
+    text-decoration: none;
+    /* color: gray; */
+}
+
+.icon-white {
+    color: white !important;
+    /* background-color: white !important; */
+}
+
+.icons {
+    height: 22px;
+    width: 22px;
+    font-size: 14px;
+    /* color: white; */
+}
+
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.nav-hover {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    position: relative;
+    transition: all linear .3s;
+    font-weight: 500;
+}
+
+.active {
+    color: #FF6A3D !important;
+}
+
+.nav-link:hover {
+    color: #FF6A3D;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    bottom: 0;
+    left: 8px;
+    background-color: #FF6A3D;
+    transform: scale(0, 1);
+    transition: transform .4s ease;
+
+}
+
+.nav-link:hover::after {
+    transform: scale(1, 1);
+}
+
+.logo-color {
+    color: #FF6A3D !important;
+}
+
+.heading-color {
+    color: #1A2238 !important;
+}
+
+.background {
+    background: #1A2238 !important;
+}
+
+.background2 {
+    background-color: #0B4141;
+}
