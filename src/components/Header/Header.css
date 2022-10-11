@@ -53,8 +53,9 @@
     font-weight: 500;
 }
 
-.active {
-    color: #FF6A3D !important;
+.active,
+.text-yellow {
+    color: #ffc107 !important;
 }
 
 .nav-link:hover {
@@ -92,4 +93,8 @@
 
 .background2 {
     background-color: #0B4141;
+}
+
+.background3 {
+    background-color: #e9ebf7;
 }

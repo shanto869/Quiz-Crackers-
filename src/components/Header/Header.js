@@ -9,7 +9,7 @@ const Header = () => {
 
             <nav className="navbar navbar-expand-lg background text-white">
                 <div className="container ">
-                    <Link className="navbar-brand fs-2 fw-bold text-white font-ubuntu" href="/"><span
+                    <Link className="navbar-brand fs-2 fw-bold text-yellow font-ubuntu" href="/"><span
                         className="logo-color ">Test </span>
                         Wafers</Link>
                     <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
