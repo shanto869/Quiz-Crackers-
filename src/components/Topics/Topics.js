@@ -1,5 +1,4 @@
 import React from 'react';
-import { BeakerIcon } from '@heroicons/react/24/solid'
 import { useLoaderData } from 'react-router-dom';
 import Topic from '../Topic/Topic';
 import './Topics.css'

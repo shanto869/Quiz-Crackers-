@@ -3,13 +3,25 @@ import './Option.css'
 
 const Option = ({ option, idx, correctAnswer }) => {
     console.log(option)
-    const handleAnswer = (correctAns) => {
-        console.log(correctAns)
+
+
+
+
+
+    const handleAnswer = (option) => {
+        if (option === correctAnswer) {
+            console.log(option, 'correct')
+
+        }
+        else {
+            console.log(option, 'vul')
+
+        }
     }
 
     return (
         <div className='option-container'>
-            <button onClick={() => handleAnswer(correctAnswer)} className='option mt-2'>
+            <button onClick={() => handleAnswer(option)} className='option mt-2'>
                 {idx + 1}. {option}
             </button>
         </div>
