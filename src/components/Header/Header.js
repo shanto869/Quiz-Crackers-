@@ -8,7 +8,7 @@ const Header = () => {
 
         <nav className="navbar navbar-expand-lg background text-white fixed-top">
             <div className="container">
-                <Link className="navbar-brand fs-2 fw-bold text-yellow font-ubuntu" to="/"><span className="logo-color "> Primo </span>
+                <Link className="navbar-brand fs-2 fw-bold text-yellow font-ubuntu" to="/home"><span className="logo-color "> Primo </span>
                     Quiz Context</Link>
                 <button className="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false"

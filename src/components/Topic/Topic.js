@@ -13,7 +13,7 @@ const Topic = ({ topic }) => {
     return (
         <div className='topic background3'>
             <img src={logo} alt="" />
-            <div>
+            <div className='mt-3'>
                 <h4>{name}</h4>
                 <p>Total Quiz: {total}</p>
             </div>
