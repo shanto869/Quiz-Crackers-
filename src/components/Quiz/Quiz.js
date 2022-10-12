@@ -16,7 +16,7 @@ const Quiz = ({ quiz, idx }) => {
     }
 
     return (
-        <div className='quiz px-4 '>
+        <div className='quiz px-4 bg-white'>
             <div className='d-flex justify-content-between '>
                 <h5 className='heading-font pe-5'>Quiz {idx + 1}: {question}</h5>
                 <EyeIcon onClick={() => handleCorrectAns(correctAnswer)} className="arrow " />

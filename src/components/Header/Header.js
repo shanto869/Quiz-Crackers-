@@ -6,7 +6,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid'
 const Header = () => {
     return (
 
-        <nav className="navbar navbar-expand-lg background text-white">
+        <nav className="navbar navbar-expand-lg background text-white fixed-top">
             <div className="container">
                 <Link className="navbar-brand fs-2 fw-bold text-yellow font-ubuntu" to="/"><span className="logo-color "> Primo </span>
                     Quiz Context</Link>

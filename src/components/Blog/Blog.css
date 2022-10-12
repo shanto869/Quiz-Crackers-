@@ -5,6 +5,7 @@
 .interview-container>h4 {
     margin-left: 6%;
     font-weight: 400;
+    padding-top: 80px !important;
 }
 
 @media screen and (max-width: 750px) {

@@ -5,6 +5,10 @@
     margin: 20px 10%;
 }
 
+.margin {
+    padding-top: 50px !important;
+}
+
 @media screen and (max-width: 576px) {
     .topics {
         grid-template-columns: repeat(1, 1fr);

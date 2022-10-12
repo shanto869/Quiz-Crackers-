@@ -9,8 +9,8 @@ const Topics = () => {
     const topics = topicsLoad.data;
 
     return (
-        <div>
-            <h4 className='text-white text-center py-4'>Choose Your Topics</h4>
+        <div className='margin'>
+            <h4 className='text-white text-center py-4 mt-5'>Choose Your Topics</h4>
             <div className='topics'>
                 {
                     topics.map(topic => {

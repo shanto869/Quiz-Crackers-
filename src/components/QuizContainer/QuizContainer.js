@@ -10,9 +10,9 @@ const QuizContainer = () => {
     // console.log(questions)
 
     return (
-        <div className='bg-white py-5'>
-            <h4 className='text-center'>Quiz of {name}</h4>
-            <div>
+        <div className='quiz-container pt-5'>
+            <h4 className='text-center text-white'>Quiz of {name}</h4>
+            <div className=''>
                 {
                     questions.map((quiz, idx) => <Quiz key={quiz.id} quiz={quiz} idx={idx}></Quiz>)
                 }

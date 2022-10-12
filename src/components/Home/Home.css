@@ -9,13 +9,14 @@
     width: 100%;
     position: relative;
     z-index: 999;
+    margin-top: 60px !important;
 }
 
 .home::after {
     content: '';
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     top: 0;
     left: 0;
