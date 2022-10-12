@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Topic.css'
+import './Topic.css';
+import { BeakerIcon, ArrowRightIcon } from '@heroicons/react/24/solid'
 
 const Topic = ({ topic }) => {
     const { id, name, logo, total } = topic;
@@ -17,7 +18,9 @@ const Topic = ({ topic }) => {
                 <p>Total Quiz: {total}</p>
             </div>
             <Link to={`/quiz/${id}`}>
-                <button onClick={() => handleShowQuiz(id)}>Start Quiz</button>
+                <button onClick={() => handleShowQuiz(id)} className='btn btn-primary'>Start Quiz
+                    <ArrowRightIcon className="arrow text-blue-500" />
+                </button>
             </Link>
         </div>
     );

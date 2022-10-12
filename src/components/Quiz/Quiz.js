@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Option from '../Option/Option';
 import './Quiz.css'
+import { EyeIcon } from '@heroicons/react/24/solid'
+
+
 
 const Quiz = ({ quiz, idx }) => {
     const { correctAnswer, id, options, question } = quiz;
-    // console.log(quiz)
+
+
+    const handleCorrectAns = (correctAns) => {
+        alert(
+            `Correct Answer is: "${correctAns}"`
+        )
+    }
+
     return (
         <div className='quiz px-4'>
-            <h5 className='heading-font'>Quiz {idx + 1}: {question}</h5>
+            <div className='d-flex justify-content-between'>
+                <h5 className='heading-font pe-5'>Quiz {idx + 1}: {question}</h5>
+                <EyeIcon onClick={() => handleCorrectAns(correctAnswer)} className="arrow " />
+            </div>
             <div className=''>
                 {
                     options.map((option, idx) =>
