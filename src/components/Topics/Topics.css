@@ -9,14 +9,14 @@
     padding-top: 50px !important;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
     .topics {
         grid-template-columns: repeat(1, 1fr);
         margin: 20px 5%;
     }
 }
 
-@media screen and (min-width: 577px) and (max-width: 800px) {
+@media screen and (min-width: 401px) and (max-width: 800px) {
     .topics {
         grid-template-columns: repeat(2, 1fr);
         margin: 20px 5%;

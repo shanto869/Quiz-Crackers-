@@ -2,11 +2,35 @@ import React, { useState } from 'react';
 import Option from '../Option/Option';
 import './Quiz.css'
 import { EyeIcon } from '@heroicons/react/24/solid'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Quiz = ({ quiz, idx }) => {
     const { correctAnswer, id, options, question } = quiz;
+
+    const [correctAns, setCorrectAns] = useState(0);
+    const [incorrectAns, setIncorrectAns] = useState(0);
+
+
+    const handleAnswer = (option, correctAnswer) => {
+        let countCorrect = 0;
+        if (option === correctAnswer) {
+            countCorrect = countCorrect + 1;
+            toast.success('Correct Answer!', { autoClose: 800 }, {
+                position: toast.POSITION.TOP_CENTER
+            });
+
+            console.log(countCorrect)
+        }
+        else {
+            toast.warning('Your Answer is Incorrect!', { autoClose: 800 }, {
+                position: toast.POSITION.TOP_CENTER
+            });
+            let newValue = incorrectAns + 1;
+            setIncorrectAns(newValue)
+        }
+    }
 
 
     const handleCorrectAns = (correctAns) => {
@@ -25,10 +49,12 @@ const Quiz = ({ quiz, idx }) => {
                 {
                     options.map((option, idx) =>
                         <Option
-                            key={idx} option={option} idx={idx} correctAnswer={correctAnswer}>
+                            key={idx} option={option} idx={idx} correctAnswer={correctAnswer} handleAnswer={handleAnswer}>
                         </Option>)
                 }
             </div>
+            <ToastContainer></ToastContainer>
+
         </div>
     );
 };
