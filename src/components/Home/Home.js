@@ -7,7 +7,6 @@ import './Home.css'
 const Home = () => {
     const topicsLoad = useLoaderData();
     const topics = topicsLoad.data;
-    console.log(topics)
 
     return (
 
