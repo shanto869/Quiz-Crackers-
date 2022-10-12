@@ -10,7 +10,7 @@ const QuizContainer = () => {
     // console.log(questions)
 
     return (
-        <div className='bg-white'>
+        <div className='bg-white py-5'>
             <h4 className='text-center'>Quiz of {name}</h4>
             <div>
                 {
