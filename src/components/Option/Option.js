@@ -31,6 +31,8 @@ const Option = ({ option, idx, correctAnswer }) => {
             <button onClick={() => handleAnswer(option)} className='option mt-2'>
                 {idx + 1}. {option}
             </button>
+            {/* <input onClick={() => handleAnswer(option)} className='option mt-2' type="radio" name="option" value={option} id="" />{option} */}
+
             <ToastContainer></ToastContainer>
         </div>
     );

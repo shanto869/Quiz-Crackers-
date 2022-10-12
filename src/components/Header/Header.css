@@ -98,3 +98,5 @@
 .background3 {
     background-color: #e9ebf7;
 }
+
+@media screen and (max-width: 576px) {}
