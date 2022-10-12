@@ -1,0 +1,28 @@
+.home {
+    background-image: url('https://media.istockphoto.com/photos/and-a-question-and-answer-shot-form-on-wooden-block-picture-id1337475990?b=1&k=20&m=1337475990&s=170667a&w=0&h=mkuwkXiXwCjfmbzOYt76tT0KWj06wJ2DaLXllzGIa1M=');
+
+    padding: 100px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+.home::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home .home-info {
+    z-index: 999;
+    color: white;
+}
