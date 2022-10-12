@@ -15,7 +15,9 @@ const Statistics = () => {
                     <Bar dataKey="total" fill="#1A2238" />
                     <XAxis dataKey='name'></XAxis>
                     <YAxis dataKey='total' />
+                    <Legend />
                     <Tooltip />
+                    <CartesianGrid strokeDasharray="3 3" />
                 </BarChart>
             </div>
 

@@ -10,7 +10,7 @@ const Topics = () => {
 
     return (
         <div>
-            <h4>Topics Are Here : {topics.length}</h4>
+            <h4 className='text-white text-center py-4'>Choose Your Topics</h4>
             <div className='topics'>
                 {
                     topics.map(topic => {
